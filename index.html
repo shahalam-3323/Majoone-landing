@@ -1,121 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Majoone Asar-e-Khass – Herbal Strength & Stamina Boost</title>
-  <meta name="description" content="Majoone Asar-e-Khass is a 100% herbal Unani/Ayurvedic paste that boosts energy (Shakti), strength, and stamina. Limited-time launch price ₹1500." />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Majoone Asar-e-Khass - Energy, Strength & Stamina</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0; padding: 0;
+        background: #f8f9fa;
+        color: #333;
+    }
+    header {
+        background: #006b4f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 { margin: 0; font-size: 1.8rem; }
+    header p { margin: 5px 0 0; font-size: 1rem; }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 15px;
+    }
+    .hero {
+        text-align: center;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+    .hero img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .offer {
+        background: #e63946;
+        color: white;
+        padding: 10px;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .price {
+        font-size: 1.5rem;
+        margin: 15px 0;
+        color: #e63946;
+    }
+    h2 {
+        color: #006b4f;
+        margin-top: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul li::before {
+        content: "✔ ";
+        color: #006b4f;
+    }
+    .ingredients img {
+        max-width: 100px;
+        border-radius: 8px;
+        margin-bottom: 5px;
+    }
+    form {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-top: 30px;
+    }
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .pay-btn {
+        background: #28a745;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        width: 100%;
+    }
+    .pay-btn:hover {
+        background: #218838;
+    }
+    footer {
+        background: #f1f1f1;
+        padding: 15px;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 40px;
+    }
+</style>
+<script>
+function redirectToPayment(event) {
+    event.preventDefault();
+    document.querySelector("form").submit(); 
+    window.location.href = "https://rzp.io/rzp/6iSAna5";
+}
+</script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>SHAKTI. STAMINA. SEHAT.</h1>
-      <h2>Majoone Asar-e-Khass<br/><span>For Energy, Strength &amp; Stamina</span></h2>
-      <p class="price">Launch Offer: <span class="current-price">₹1500</span> <span class="original-price">₹3000</span></p>
-      <!-- Replace "#" with actual Razorpay payment link -->
-      <a href="#" class="btn buy-now-btn">Buy Now</a>
+
+<header>
+    <h1>Majoone Asar-e-Khass</h1>
+    <p>For Energy, Strength & Stamina</p>
+</header>
+
+<div class="container">
+    <!-- Hero -->
+    <div class="hero">
+        <img src="images/product.jpg" alt="Majoone Asar-e-Khass">
+        <div class="offer">🔥 Launch Offer - Limited Time Only 🔥</div>
+        <div class="price">₹1,599 <s>₹3,000</s></div>
     </div>
-    <div class="hero-image">
-      <img src="images/product.jpg" alt="Majoone Asar-e-Khass herbal paste (250gm bottle)" />
-    </div>
-  </section>
 
-  <!-- Benefits Section -->
-  <section id="benefits">
-    <h2>Key Benefits</h2>
-    <div class="benefits-container">
-      <div class="benefit">
-        <i class="fa-solid fa-bolt"></i>
-        <h3>Energy (Shakti)</h3>
-        <p>Boosts natural energy and vitality so you feel revitalized every day.</p>
-      </div>
-      <div class="benefit">
-        <i class="fa-solid fa-dumbbell"></i>
-        <h3>Strength (Bala)</h3>
-        <p>Enhances muscular strength and physical power to tackle life’s challenges.</p>
-      </div>
-      <div class="benefit">
-        <i class="fa-solid fa-heartbeat"></i>
-        <h3>Stamina (Tahammul)</h3>
-        <p>Improves endurance and stamina for lasting performance throughout the day.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Benefits -->
+    <section>
+        <h2>Why Choose This Product?</h2>
+        <ul>
+            <li>Boosts physical strength and stamina</li>
+            <li>Improves overall health & vitality</li>
+            <li>Traditional herbal formula for men</li>
+            <li>Natural energy without side effects</li>
+        </ul>
+    </section>
 
-  <!-- Ingredients & How It Works Section -->
-  <section id="ingredients">
-    <h2>Ingredients & How It Works</h2>
-    <p>Majoone Asar-e-Khass combines potent Unani and Ayurvedic herbs to nourish your body and boost performance:</p>
-    <ul class="ingredients-list">
-      <li><strong>Safed Musli:</strong> Supports vitality and overall health.</li>
-      <li><strong>Ashwagandha:</strong> Reduces stress and enhances endurance.</li>
-      <li><strong>Shatavari:</strong> Known to support strength and stamina.</li>
-      <li><strong>Shilajit:</strong> Rejuvenates the body and increases energy.</li>
-      <!-- Add more ingredients as needed -->
-    </ul>
-    <p>These herbs work together as adaptogens to eliminate fatigue, strengthen the muscles, and improve metabolism, giving you a natural boost in <em>Shakti</em>, strength, and overall <em>Sehat</em>.</p>
-  </section>
+    <!-- Ingredients -->
+    <section class="ingredients">
+        <h2>Key Ingredients</h2>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 15px;">
+            <div>
+                <img src="images/ingredient1.jpg" alt="Ashwagandha">
+                <p>Ashwagandha</p>
+            </div>
+            <div>
+                <img src="images/ingredient2.jpg" alt="Safed Musli">
+                <p>Safed Musli</p>
+            </div>
+            <div>
+                <img src="images/ingredient3.jpg" alt="Shilajit">
+                <p>Shilajit</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h2>What Our Customers Say</h2>
-    <blockquote>
-      <p>"Since I started using Majoone Asar-e-Khass, my energy and strength have never been better!"</p>
-      <cite>— A Satisfied Customer</cite>
-    </blockquote>
-    <blockquote>
-      <p>"Great herbal formula. I feel more active throughout the day."</p>
-      <cite>— Real User</cite>
-    </blockquote>
-    <p class="testimonial-note">*More testimonials coming soon*</p>
-  </section>
+    <!-- Order Form -->
+    <form name="order-form" method="POST" data-netlify="true" onsubmit="redirectToPayment(event)">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Contact Number" required>
+        <textarea name="address" placeholder="Full Address" required></textarea>
+        <select name="state" required>
+            <option value="">Select State</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chhattisgarh</option>
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>
+            <option>Nagaland</option>
+            <option>Odisha</option>
+            <option>Punjab</option>
+            <option>Rajasthan</option>
+            <option>Sikkim</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Tripura</option>
+            <option>Uttar Pradesh</option>
+            <option>Uttarakhand</option>
+            <option>West Bengal</option>
+        </select>
+        <input type="number" name="zipcode" placeholder="Zipcode" required>
+        <button type="submit" class="pay-btn">Pay Now</button>
+    </form>
+</div>
 
-  <!-- Buy Now CTA Section -->
-  <section id="buy-now">
-    <h2>Ready to Transform Your Strength?</h2>
-    <a href="#" class="btn buy-now-btn">Buy Now for ₹1500</a>
-  </section>
+<footer>
+    📞 +91 8273896083 - Dr Amjad<br>
+    &copy; 2025 Majoone Asar-e-Khass | All Rights Reserved
+</footer>
 
-  <!-- FAQ Section -->
-  <section id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <details>
-      <summary>How do I use Majoone Asar-e-Khass?</summary>
-      <p>Take a quarter spoon of the paste with warm milk every night. Use it daily for the first week, then on alternate days. Avoid eating immediately after; drink water as usual.</p>
-    </details>
-    <details>
-      <summary>Is it safe?</summary>
-      <p>Yes. Majoone Asar-e-Khass is made from 100% natural Unani and Ayurvedic herbs. No known side effects have been reported. If you have a health condition, consult your doctor before use.</p>
-    </details>
-    <details>
-      <summary>What are the main ingredients?</summary>
-      <p>The formula includes herbs like Safed Musli, Ashwagandha, Shatavari, and Shilajit, among others, blended for maximum benefit.</p>
-    </details>
-    <details>
-      <summary>Who should use this product?</summary>
-      <p>It is designed for Indian men aged 18–60 seeking increased energy, strength, and stamina. Not intended for pregnant women or children.</p>
-    </details>
-    <details>
-      <summary>How soon will I see results?</summary>
-      <p>Results may vary. Many users report noticing improvements in energy and stamina within 2–3 weeks of regular use.</p>
-    </details>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Majoone Asar-e-Khass. All Rights Reserved.</p>
-    <p>Contact: <a href="mailto:info@majooneasar.com">info@majooneasar.com</a></p>
-    <p>Follow us:
-      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    </p>
-  </footer>
 </body>
 </html>
